@@ -1,108 +1,209 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>
-        Garrett Amerson | Cybersecurity Portfolio:
-        SOC Analyst focused on Blue Team Operations
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Hacker-style font -->
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Garrett Amerson | Cybersecurity Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            font-family: 'Share Tech Mono', monospace;
+            background-color: #0b0f14;
+            color: #d7dde5;
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.8;
             max-width: 900px;
             margin: auto;
-            padding: 40px;
-            background-color: #111;
-            color: #eee;
-            line-height: 1.6;
+            padding: 60px 25px;
         }
 
         h1, h2, h3 {
-            color: white;
-            letter-spacing: 1px;
-        }
-
-        a {
-            color: #66ccff;
-            text-decoration: none;
-        }
-
-        a:hover {
+            font-weight: 600;
             color: #ffffff;
         }
 
-        .hero {
-            margin-bottom: 50px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 30px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
+        h1 {
+            font-size: 2.5rem;
             margin-bottom: 10px;
         }
 
-        .hero p {
-            color: #66ccff;
-            font-size: 18px;
-        }
-
-        .project {
-            border: 1px solid #333;
-            padding: 15px;
+        h2 {
+            margin-top: 50px;
             margin-bottom: 20px;
-            border-radius: 8px;
-            background-color: #1a1a1a;
+            font-size: 1.3rem;
+            border-left: 4px solid #58a6ff;
+            padding-left: 12px;
         }
 
+        p {
+            margin-bottom: 20px;
+            color: #b9c2cc;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: 0.2s ease;
+        }
+
+        a:hover {
+            color: #7cc0ff;
+        }
+
+        .subtitle {
+            color: #7d8590;
+            margin-bottom: 40px;
+        }
+
+        .terminal-box {
+            background-color: #11161d;
+            border: 1px solid #1f2933;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.2s ease;
+        }
+
+        .terminal-box:hover {
+            transform: translateY(-3px);
+        }
+
+        .project-title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #17202b;
+            color: #7cc0ff;
+            border: 1px solid #263241;
+            padding: 4px 10px;
+            border-radius: 999px;
+            margin-right: 8px;
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #1f2933;
+            margin: 50px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #b9c2cc;
+        }
+
+        .footer {
+            margin-top: 60px;
+            color: #7d8590;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Main Header -->
-    <div class="hero">
-        <h1>Garrett Amerson</h1>
+    <h1>Garrett Amerson</h1>
 
-        <p>
-            SOC Analyst focused on Blue Team Operations
-        </p>
-    </div>
-
-    <!-- Contact Section -->
-    <h1>Contact</h1>
-
-    <h2>LinkedIn</h2>
+    <p class="subtitle">
+        SOC Analyst | Blue Team Operations
+    </p>
 
     <p>
-        <a href="https://www.linkedin.com/in/garrett-amerson/" target="_blank">
-            https://www.linkedin.com/in/garrett-amerson/
-        </a>
+        I am a cybersecurity student focused on blue team operations.
     </p>
+
+    <h2>Certifications & Training</h2>
+
+    <ul>
+        <li>TCM Security — SOC 101 (PSAA) (Completed)</li>
+        <li>TCM Security — SOC 201 (PSAP) (Completed)</li>
+        <li>CompTIA Security+ (July 2026)</li>
+    </ul>
 
     <h2>Resume</h2>
 
     <p>
-        <a href="resume.pdf">Download Resume</a>
+        <a href="resume.pdf" target="_blank">Download Resume (PDF)</a>
     </p>
 
-    <!-- Projects Section -->
-    <h1>Projects</h1>
+    <h2>GitHub</h2>
 
-    <div class="project">
-        <h3>Agentic Threat Hunting Framework: How-To</h3>
+    <p>
+        <a href="https://github.com/sheph4ck" target="_blank">
+            https://github.com/sheph4ck/
+        </a>
+    </p>
 
-        <p>
-            ATHF is an open-source framework that adds structure, memory,
-            and automation to threat hunting.
-        </p>
+    <h2>Contact</h2>
+
+    <p>
+        Email: 
+    </p>
+
+    <div class="footer">
+        © 2026 Garrett Amerson
     </div>
 
 </body>
-
 </html>
+```
+
+## What You Need To Edit
+
+Search and replace these values:
+
+* `YOURUSERNAME`
+* `your-email@example.com`
+* Project descriptions
+* Certifications
+* Resume filename if different
+
+## How To Upload
+
+1. Open your GitHub Pages repository
+2. Click `Add file`
+3. Click `Upload files`
+4. Upload:
+
+   * `index.html`
+   * `resume.pdf`
+5. Commit changes
+6. Wait about 1 minute for GitHub Pages to update
+
+Your site will then appear at:
+
+```text
+https://YOURUSERNAME.github.io
+```
